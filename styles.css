@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+/* Header Section */
+
+header {
+  background-image: url(/images/JacksonvilleDowntown.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+}
+
+header h1 {
+  background-color: #d7a22a;
+  /* color: white; */
+  margin-bottom: 10px;
+}
+
+header h2 {
+  background-color: #d7a22a;
+}
+
+/* Mid-Section -- Activities */
+
+.activity-section {
+  background-color: #9f792c;
+  padding: 1em;
+}
+
+.activity-layout {
+  display: flex;
+}
+
+.activity-section h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.activity-item {
+  width: 33%;
+  text-align: center;
+  padding-block: 1.5em;
+  padding-inline: 1em;
+}
+
+.activity-item h3 {
+  padding: 0.5rem;
+}
+
+.activity-img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+/* Bottom Section - Card */
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding-block: 2rem;
+  margin: 2rem;
+  gap: 1rem;
+  background-color: #006778;
+  color: #fff;
+
+  border-radius: 1em;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 40%;
+  align-items: center;
+}
+
+.portrait {
+  width: 35%;
+  border-radius: 4%;
+}
+
+@media (min-width: 1000px) {
+  .card-info {
+    font-size: 1.5rem;
+  }
+}
